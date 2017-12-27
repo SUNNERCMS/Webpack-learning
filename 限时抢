@@ -12,13 +12,18 @@
 	function showtime()
 	{
 	var curtime=new Date();
-	var endtime=new Date(2017,11,31,12,23,33);
+	var endtime=new Date(2017,11,27,21,57,33);
 	var lefttime= (endtime.getTime()-curtime.getTime())/1000;//剩余秒数
 	var t=parseInt((lefttime/(60*60))/24);
 	var h=parseInt((lefttime/(60*60))%24);
 	var m=parseInt((lefttime/60)%60);
 	var s=parseInt(lefttime%60);
-	document.getElementById("s").innerHTML=t+"天"+h+"时"+m+"分"+s+"秒";
+	if(lefttime<=0)
+	{
+		document.getElementById("s").innerHTML="活动结束啦"
+	}
+	else
+	    document.getElementById("s").innerHTML=t+"天"+h+"时"+m+"分"+s+"秒";
 	//setTimeout(showtime,500);
 	}
 	setInterval(showtime,500);
