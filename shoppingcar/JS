@@ -134,7 +134,7 @@ window.onload=function() {
             var val=parseInt(this.value);
             var reduce=tr.getElementsByTagName('span')[1];
             if(isNaN(val)||val<1){
-                val=1;//为了使val不进入else语句，避免数量等于1时也出现减号
+                val=1;       //为了使val不进入else语句，避免数量等于1时也出现减号
             }
             // console.log(this.value);1f
             // console.log(val);1
