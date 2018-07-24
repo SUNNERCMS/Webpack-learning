@@ -2,7 +2,6 @@
 <html>
  <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2132"/> 
-
  <!--<meta http-equiv="refresh" content="1;Url=http://www.baidu.com">-->
     <title>日期显示</title> 
 	<script type="text/javascript">
@@ -24,10 +23,9 @@
 	}
 	else
 	    document.getElementById("s").innerHTML=t+"天"+h+"时"+m+"分"+s+"秒";
-	//setTimeout(showtime,500);
+	   //setTimeout(showtime,500);
 	}
 	setInterval(showtime,500);
-	
 </script>
  </head>
  <body>
