@@ -1,0 +1,10 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.info,.result{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+}
+
