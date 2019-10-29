@@ -3,20 +3,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-//commonjs的语法，向外暴露一个配置对象
+
+
 module.exports = {
-    //配置打包模式：开发模式，生产模式
-    mode: 'production',
-    devtool: 'cheap-module-source-map', //存在映射关系，没有map映射文件，该映射函关系放到了打包中的js代码中。
     entry: {
         main: './src/index.js',
-        // sub: './src/index.js'
     },
-    // 出口文件，用来设置打包之后的代码放在哪里
     output: {
-        // publicPath: 'http://cdn.com.cn',
-        // filename: 'bundle.js',
-        // publicPath: '/',
         filename: '[name].js',  //会根据entry的键名来生成打包后的文件名
         path: path.resolve(__dirname,'dist') //生成了bundle的绝对路径，位于webpack.config.js的所在当前目录的路径
     },
@@ -26,8 +19,8 @@ module.exports = {
         }),
         new CleanWebpackPlugin() //打包之前清理输出文件夹中的内容
     ],
-    //moudle打包模块时要使用的loader
-    module:{
+     //moudle打包模块时要使用的loader
+     module:{
         rules:[
             {
                 test: /\.(jpg|png|gif)$/,
