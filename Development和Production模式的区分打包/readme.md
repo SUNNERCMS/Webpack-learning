@@ -15,4 +15,4 @@
 - 执行npm run build
 >在目录中会生成一个dist文件夹，main.js是压缩之后的，这里的文件可以供服务器直接使用，main.js.map是对应的错误提醒映射关系文件  
 
-![](./showpictures/1.png)
+![](https://github.com/SUNNERCMS/Webpack-learning/blob/master/Development%E5%92%8CProduction%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%86%E6%89%93%E5%8C%85/showpictures/1.png)
