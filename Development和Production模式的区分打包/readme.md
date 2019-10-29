@@ -15,4 +15,4 @@
 - 执行npm run build
 >在目录中会生成一个dist文件夹，main.js是压缩之后的，这里的文件可以供服务器直接使用，main.js.map是对应的错误提醒映射关系文件  
 
-![hah](./showpictures/1.png)
+![](./showpictures/1.png)
