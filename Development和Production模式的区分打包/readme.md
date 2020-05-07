@@ -45,4 +45,3 @@ const devConfig = {
 }
 module.exports = merge(commonConfig, devConfig); //合并输出dev配置文件
 ```
-
