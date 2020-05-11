@@ -2,7 +2,6 @@
 
 ##### 按照开发模式进行webpack配置
 >开发模式和线上模式在打包时所使用的配置是有所差别的，可以通过设置不同的打包文件对二者执行区分化打包，同时也可以将二者共有的配置项提取到公共的配置文件中。
-
 将webpack.config.js文件分成webpack.dev.js和webpack.prod.js   
 对应的在package.json中将运行指令也进行划分：   
 ```js
