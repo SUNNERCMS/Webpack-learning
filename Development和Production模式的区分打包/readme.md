@@ -19,7 +19,7 @@
 ![](https://github.com/SUNNERCMS/Webpack-learning/blob/master/Development%E5%92%8CProduction%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%86%E6%89%93%E5%8C%85/showpictures/1.png)
 
 ##### 提取公共的配置模块 
-将webpack按照开发模式和生存模式一份为二合之后，可以发现二者之间是存在公用配置项的，提出出公共的配置项，然后将dev.js、prod.js文件和common.js文件合并作为输出的配置文件。   
+   将webpack按照开发模式和生存模式一份为二合之后，可以发现二者之间是存在公用配置项的，提出出公共的配置项，然后将dev.js、prod.js文件和common.js文件合并作为输出的配置文件。   
 - 安装 npm install webpack-merge -D
 - 引入webpack-merge以及webpack.common.js,合并后输出完成的dev或者prod的webpack配置
 ```js
