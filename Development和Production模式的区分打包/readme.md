@@ -42,5 +42,6 @@ const devConfig = {
         new webpack.HotModuleReplacementPlugin() 
     ]
 }
-module.exports = merge(commonConfig, devConfig); //合并输出dev配置文件
+// 合并输出dev配置文件
+module.exports = merge(commonConfig, devConfig);
 ```
