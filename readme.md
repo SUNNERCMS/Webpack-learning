@@ -2,7 +2,6 @@
 
 ##### 按照开发模式进行webpack配置
 >开发模式和线上模式在打包时所使用的配置是有所差别的，可以通过设置不同的打包文件对二者执行区分化打包，同时也可以将二者共有的配置项提取到公共的配置文件中。
-
 将webpack.config.js文件分成webpack.dev.js和webpack.prod.js   
 对应的在package.json中将运行指令也进行划分：   
 ```js
@@ -19,7 +18,7 @@
 ![](https://github.com/SUNNERCMS/Webpack-learning/blob/master/Development%E5%92%8CProduction%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%86%E6%89%93%E5%8C%85/showpictures/1.png)
 
 ##### 提取公共的配置模块 
-将webpack按照开发模式和生存模式一份为二合之后，可以发现二者之间是存在公用配置项的，提出出公共的配置项，然后将dev.js、prod.js文件和common.js文件合并作为输出的配置文件。   
+   将webpack按照开发模式和生存模式一份为二合之后，可以发现二者之间是存在公用配置项的，提出出公共的配置项，然后将dev.js、prod.js文件和common.js文件合并作为输出的配置文件。   
 - 安装 npm install webpack-merge -D
 - 引入webpack-merge以及webpack.common.js,合并后输出完成的dev或者prod的webpack配置
 ```js
@@ -43,5 +42,6 @@ const devConfig = {
         new webpack.HotModuleReplacementPlugin() 
     ]
 }
-module.exports = merge(commonConfig, devConfig); //合并输出dev配置文件
+// 合并输出dev配置文件
+module.exports = merge(commonConfig, devConfig);
 ```
